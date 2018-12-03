@@ -1,0 +1,31 @@
+.menus{
+  list-style: none;
+  border-right: 1px solid #e8e8e8;
+  margin-right: 100px;
+  li{
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 0 16px 0 28px;
+  }
+}
+:global{
+  .selected{
+    background-color: #e6f7ff;
+    color: #1890ff;
+    &::before{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-right: 3px solid #1890ff;
+    }
+  }
+}
